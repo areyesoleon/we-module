@@ -1,0 +1,65 @@
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.button {
+  display: flex;
+  width: 17rem;
+  height: 8.5rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 0.30rem;
+  margin: 0.25rem;
+}
+
+.button #icon {
+  margin-right: 1rem;
+}
+
+.button b {
+  font-size: 1.3rem
+}
+
+/* descktop */
+
+@media only screen and (min-width: 1024px) {
+  .button #icon {
+    display: true;
+  }
+}
+
+/* tablet */
+
+@media only screen and (max-width: 1023px) {
+  .button {
+    width: 15rem;
+    height: 6.5rem;
+  }
+
+  .button b {
+    font-size: 1rem
+  }
+
+  .button #icon {
+    display: true;
+  }
+}
+
+/* movile */
+
+@media only screen and (max-width: 600px) {
+  .button #icon {
+    display: none;
+  }
+
+  .button {
+    width: 10rem;
+    height: 5.5rem;
+  }
+  .button b {
+    font-size: 0.90rem
+  }
+}

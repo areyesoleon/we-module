@@ -1,0 +1,1 @@
+export * from './src/app/opcion-module/opcion-module.module'

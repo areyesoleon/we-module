@@ -1,0 +1,8 @@
+<div id="container">
+  <a mat-raised-button color="primary" class="button" *ngFor="let module of modules" [id]="module.id">
+    <button mat-fab color="primary" disabled id="icon">
+      <mat-icon>{{module.icon}}</mat-icon>
+    </button>
+    <b>{{module.module}}</b>
+  </a>
+</div>
